@@ -1,5 +1,5 @@
 const InputJSON = require("./input.json");
-const fillVariable = require("./main");
+const { default: fillVariable } = require("./main");
 const _ = require("lodash");
 
 const OutputJSON = fillVariable();
