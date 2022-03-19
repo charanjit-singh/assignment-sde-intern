@@ -1,9 +1,9 @@
-const InputJSON = require("./input.json");
+const OutputJSON = require("./output.json");
 const { default: fillVariable } = require("./main");
 const _ = require("lodash");
 
-const OutputJSON = fillVariable();
-if (_.isEqual(InputJSON, OutputJSON)) {
+const evaluatedJSON = fillVariable();
+if (_.isEqual(evaluatedJSON, OutputJSON)) {
   console.log("Passed");
 } else {
   console.log("Failed");
